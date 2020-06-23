@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*barra de navegación*/
+header{
+  background-color: rgba(13, 84, 92, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+  margin-bottom: 2%;
+}
+li, a{
+  font-family: 'Mukta', sans-serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 5px;
+  transition: all 0.2s ease 0s;
+  color: #fdfdfd;
+}
+li, a:hover{
+  color:#ee6c4d;
+}
+.foto{
+  border-radius: 50%;
+  overflow:hidden;
+  width: 7%;
+  display: block;
+}
+.foto img{
+  width: 100%
+}
+
+/*cuerpo*/
+main{
+  width: 100%;
+  border: 2px;
+  border-color: black;
+}
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw;
+  height: 1200px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.caja{
+  width: 40%;
+  background-color: rgba(13, 84, 92, 0.6);
+  margin: 10px 10px;
+  padding: 10px;
+  align-self: center;
+}
+h2{
+  font-weight: 700;
+  margin-left: 20px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 500;
+  color: #fdfdfd;
+}
+h3{
+  margin: 15px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 500;
+  color: #fdfdfd;
+}
+p{
+  margin: 10px 30px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+  color: #fdfdfd;
+}
+/*footer*/
+footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #ee6c4d;;
+  padding: 15PX;
+}
+footer div{
+  padding: 10px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+  color: #fdfdfd;
+}
+@media (max-width:935px) {
+  li, a{
+    font-size: 12px;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vw;
+    height: 1000px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  h2{
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+  }
+  h3{
+    margin: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+  }
+  p{
+    margin: 10px 30px;
+    font-size: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+  }
+}
+@media (max-width:800px) {
+  li, a{
+    font-size: 12px;
+  }
+}
+@media (max-width:650px) {
+  .foto{
+    display: none;
+  }
+  footer{
+    font-size: 10px;
+  }
+}/*agregé este porque había un momento donde las palabras se superpinían*/
+@media (max-width:550px) {
+  header{
+    display: block;
+    text-align: center;
+  }
+  li, a{
+    font-size: 10px;
+    margin: 3px;
+  }
+  .contenedor{
+    display: inline;
+  }
+  .caja{
+    width: 80%;
+    margin: 20px auto;
+  }
+  h2{
+    font-weight: 700;
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  h3{
+    margin: 10px;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  p{
+    margin: 5px 25px;
+    font-size: 10px;
+  }
+}

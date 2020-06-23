@@ -1,0 +1,160 @@
+body{
+  background-color: #111213;
+}
+.bg1{
+  background-color: rgba(13, 84, 92, 0.6);
+}
+.bg2{
+  background-color: rgba (17, 18, 19, 0.5);
+}
+.bg3{
+  background-color: #fdfdfd;
+}
+.ctexto{
+  color: #fdfdfd;
+}
+.ctexto:hover{
+  color: #ee6c4d;
+}
+.landing{
+  background-image: url(../img/el.jpg);
+  height: 50vw;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 10%;
+}
+#landingtitle{
+  font-family:Fjalla One;
+  color: #fdfdfd;
+  font-size: 40px;
+}
+#landingtext{
+  font-family: Abel;
+  color: #fdfdfd;
+  font-size: 20px;
+  padding-top: 20%;
+}
+#try{
+  text-align: center;
+
+}
+.biography{
+  margin-top:3%;
+  padding: 2%;
+}
+.companies{
+  margin-top: 3%;
+  padding: 2%;
+}
+.quotes{
+  margin-top: 3%;
+  padding: 2%;
+}
+.cameos{
+  margin-top: 3%;
+  padding: 2%;
+}
+#title{
+  font-family: Fjalla One;
+  color:#ee6c4d;
+  font-size: 40px;
+  padding: 10px;
+}
+#texto{
+  font-family: Abel;
+  color: #fdfdfd;
+  padding: 3%;
+  font-size: 20px;
+}
+.title{
+  font-family: Fjalla One;
+  color:#ee6c4d;
+  font-size: 40px;
+  padding: 10px;
+}
+.texto{
+  font-family: Abel;
+  color: #fdfdfd;
+  padding: 3%;
+}
+.separarc{
+  margin: 5px;
+  border: none;
+}
+.hero{
+  position: relative;
+  width:100%;
+  z-index: 1;
+  object-fit: cover;
+  margin-top:5%;
+  overflow: hidden;
+}
+.hero .info{
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  right: 5%;
+}
+.hero .info .separari{
+  margin-top: 17%;
+  padding: 5px;
+}
+.contact{
+justify-content: center;
+margin-bottom: 3%;
+  padding: 5%
+}
+.bajar{
+  padding-top: 5px;
+}
+.bt-back{
+  background-color: #ee6c4d;
+  color: #fdfdfd
+}
+.bt-back:hover{
+  background-color: #fdfdfd;
+  color: #ee6c4d
+}
+.card-title{
+  color: #fdfdfd;
+  text-align: center;
+}
+.fondo1{
+display: none;
+}
+
+@media (max-width:480px) {
+  #landing{
+    background-image: url(../img/el.jpg);
+    height: 80vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 10%;
+  }
+  #landingtitle{
+    font-family: Fjalla One;
+    color: #fdfdfd;
+    font-size: 30px;
+  }
+  #landingtext{
+    font-family: Abel;
+    color: #fdfdfd;
+    font-size: 10px;
+    padding-top: 10%;
+}
+#texto{
+  font-size: 15px;
+}
+.fondo1{
+display: block;  align-self: center;
+  width: 100%;
+}
+.hero{
+  margin-top: 2%;
+}
+.bajar{
+  padding-top: 35px;
+}
+.video{
+  display: none;
+}
