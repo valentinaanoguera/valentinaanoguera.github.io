@@ -1,0 +1,73 @@
+body{
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  *{margin: 0; padding: 0;} ;
+}
+main{
+  overflow: hidden;
+}
+@keyframes texto {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(30px);}
+}
+.volvamosacasa {
+  width: 430px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 730px;
+  animation-name: texto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: backwards;
+}
+@keyframes rotar {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+.contenedortierra {
+  width: 170px;
+  position: absolute;
+  top: 17px;
+  right: 500px;
+  animation: rotar 40s infinite linear;
+}
+.contenedortierrahover{
+  transform:scale(2, 2);
+}
+.tierra {
+  width: 100%;
+}
+@keyframes mover {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-800px);}
+  100% {transform: translateY(0px;);}
+}
+
+.cohete{
+  width: 268px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1;
+  animation: mover 4s linear 1s infinite;
+}
+@keyframes fire {
+  0%{opacity: 0}
+  50%{opacity: 1}
+  100%{opacity: 0}
+}
+
+.fuego{
+  width: 189px;
+  position: absolute;
+  bottom: 89px;
+  right: 50px;
+  z-index: 0;
+  animation: mover 4s linear 1s infinite, fire 4s linear infinite;
+}
